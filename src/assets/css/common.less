@@ -1,0 +1,23 @@
+@import './vars.less';
+
+p {
+    margin: 0;
+    color: red;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clearfloat::after {
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0
+}
+.clearfloat {
+    zoom:1
+}
